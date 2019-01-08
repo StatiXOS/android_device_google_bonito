@@ -425,4 +425,8 @@
 
     <!-- Set direct background reclaim threshold -->
     <integer name="config_extraFreeKbytesAbsolute">80000</integer>
+
+    <!-- Smart Pixels -->
+    <bool name="config_enableSmartPixels">true</bool>
+
 </resources>
