@@ -19,3 +19,5 @@ PRODUCT_MODEL := Pixel 3a XL
 PRODUCT_NAME := statix_bonito
 
 BUILD_FINGERPRINT := google/bonito/bonito:12/SP2A.220505.006/8561491:user/release-keys
+
+$(call inherit-product, vendor/google/bonito/bonito-vendor.mk)

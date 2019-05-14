@@ -19,3 +19,5 @@ PRODUCT_MODEL := Pixel 3a
 PRODUCT_NAME := statix_sargo
 
 BUILD_FINGERPRINT := google/sargo/sargo:12/SP2A.220505.006/8561491:user/release-keys
+
+$(call inherit-product, vendor/google/sargo/sargo-vendor.mk)
