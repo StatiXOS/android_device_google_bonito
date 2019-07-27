@@ -644,6 +644,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=256m
 
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0 \
+    android.hidl.manager@1.0-java
+
 PRODUCT_COPY_FILES += \
     device/google/bonito/hidl/android.hidl.base@1.0.so-32:system/lib/android.hidl.base@1.0.so \
     device/google/bonito/hidl/android.hidl.base@1.0.so-64:system/lib64/android.hidl.base@1.0.so \
