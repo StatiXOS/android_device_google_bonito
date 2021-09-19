@@ -1,17 +1,14 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2160
-TARGET_SCREEN_WIDTH := 1080
-
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common StatiXOS stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/bonito/aosp_bonito.mk)
 
--include device/google/bonito/device-lineage.mk
+-include device/google/bonito/device-statix.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_bonito
+PRODUCT_NAME := statix_bonito
 PRODUCT_MODEL := Pixel 3a XL
 PRODUCT_BRAND := google
 

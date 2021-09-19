@@ -60,10 +60,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.2.vendor \
     vendor.display.config@1.3.vendor
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Elmyra
 PRODUCT_PACKAGES += \
     ElmyraService
@@ -72,19 +68,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
 
-# Google Assistant
-PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# Parts
-PRODUCT_PACKAGES += \
-    GoogleParts
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-statix
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -93,6 +78,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
