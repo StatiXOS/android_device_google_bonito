@@ -4,6 +4,10 @@
     "target_path": "kernel/google/sargito"
   },
   {
+    "repository": "android_vendor_google_sargito",
+    "target_path": "vendor/google/sargito"
+  },
+  {
     "repository": "android_packages_apps_ElmyraService",
     "target_path": "packages/apps/ElmyraService"
   }
