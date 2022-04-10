@@ -6,5 +6,10 @@
   {
     "repository": "android_vendor_google_bonito",
     "target_path": "vendor/google/bonito"
+  },
+  {
+    "repository": "StatiXOS/android_vendor_google_pixelparts",
+    "target_path": "vendor/google/pixelparts",
+    "remote": "gitlab"
   }
 ]

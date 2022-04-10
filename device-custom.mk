@@ -121,5 +121,8 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.5.vendor:64 \
     android.system.net.netd@1.1.vendor:64
 
+# Parts
+$(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
